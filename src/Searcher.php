@@ -28,8 +28,8 @@ class Searcher
      * @var array Points we found on image
 	 * Array like 
 	 * [
-	 *     ['x' => 10,'y' => 10],
-	 *	   ['x' => 20,'y' => 20],
+	 *    ['x' => 10,'y' => 10],
+	 *    ['x' => 20,'y' => 20],
 	 *	   ...
 	 * ]
      */		
