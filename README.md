@@ -19,7 +19,7 @@ This  library allows to find the coordinates of the points you are looking for o
 
 The point is the set of nearby pixels of choosen color.
 
-For example when you draw a graph on the image, we will find it's vertices.
+For example, when you draw a graph on the image, we will find it's vertices.
 
 Out of the box we have two strategies to determite our points.
 

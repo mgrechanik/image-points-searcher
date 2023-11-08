@@ -1,0 +1,25 @@
+{
+    "name": "mgrechanik/image-points-searcher",
+    "description": "This library allows to find the coordinates of the points you are looking for on an image",
+    "type": "library",
+	"keywords": ["search points on image", "image", "coordinates", "tsp", "graph", "php"],
+	"license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Mikhail Grechanik",
+			"email": "mike.grechanik@gmail.com"
+        }
+    ],
+	"support": {
+		"issues": "https://github.com/mgrechanik/image-points-searcher/issues?state=open",
+		"source": "https://github.com/mgrechanik/image-points-searcher"
+	},	
+    "require": {
+		"php": "^8.0"
+	},
+    "autoload": {
+        "psr-4": {
+            "mgrechanik\\imagepointssearcher\\": "src/"
+        }
+    }	
+}
