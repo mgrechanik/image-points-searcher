@@ -17,43 +17,42 @@ namespace mgrechanik\imagepointssearcher;
  * @since 1.0.0 
  */
 class ChoosenColorStrategy extends BaseStrategy /*implements SearchStrategyInterface*/ {
-	
-	use ColorGuard;
-	
-	/**
-	 * @var array The color we are looking for
-	 */
-	private array $searchColor;
-	
-	public function __construct(int $red, int $green, int $blue) {
-		$this->guardColor($red, $green, $blue);
-		$this->searchColor = [
-			'red' => $red,
-			'green' => $green,
-			'blue' => $blue
-		];
-	}
-	
+
+    use ColorGuard;
+
+    /**
+     * @var array The color we are looking for
+     */
+    private array $searchColor;
+
+    public function __construct(int $red, int $green, int $blue) {
+        $this->guardColor($red, $green, $blue);
+        $this->searchColor = [
+            'red' => $red,
+            'green' => $green,
+            'blue' => $blue
+        ];
+    }
+
     /**
      * @inheritdoc
      */ 	
-	public function matches(array $color) : bool {
-		return $this->isLikeSearchColor($color);
-	}
-	
+    public function matches(array $color) : bool {
+        return $this->isLikeSearchColor($color);
+    }
+
     /**
      * Check whether point color is like the one we are looking for
-	 *
-	 * @param array $color 
-	 * @return bool 
+         *
+         * @param array $color 
+         * @return bool 
      */ 	
-	protected function isLikeSearchColor(array $color) : bool{
-		return 
-			($color['red'] == $this->searchColor['red'])
-			&& ($color['green'] == $this->searchColor['green'])
-			&& ($color['blue'] == $this->searchColor['blue'])
-			? true : false;
-			
-	}
+    protected function isLikeSearchColor(array $color) : bool{
+        return 
+            ($color['red'] == $this->searchColor['red'])
+            && ($color['green'] == $this->searchColor['green'])
+            && ($color['blue'] == $this->searchColor['blue'])
+            ? true : false;
+    }
 
 }

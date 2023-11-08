@@ -18,15 +18,15 @@ namespace mgrechanik\imagepointssearcher;
  */
 trait ColorGuard
 {
-	/**
-	 * Check all colors for correct values
-	 * @throws \InvalidArgumentException
-	 */
-	protected function guardColor(int $red, int $green, int $blue) {
-		foreach ([$red, $green, $blue] as $val) {
-			if ($val < 0 || $val > 255) {
-				throw new \InvalidArgumentException('Invalid values of color');
-			}
-		}
-    }		
+    /**
+     * Check all colors for correct values
+     * @throws \InvalidArgumentException
+     */
+    protected function guardColor(int $red, int $green, int $blue) {
+        foreach ([$red, $green, $blue] as $val) {
+            if ($val < 0 || $val > 255) {
+                throw new \InvalidArgumentException('Invalid values of color');
+            }
+        }
+}		
 }

@@ -19,30 +19,30 @@ namespace mgrechanik\imagepointssearcher;
  */
 abstract class BaseStrategy
 {
-	/**
-	 * @var \GdImage Gd image object
-	 */
-	protected \GdImage $img;
-	
-	/**
-	 * Setter
-	 */
-	public function setImage(\GdImage $img) : void {
-		$this->img = $img;
-	}
-	
-	/**
-	 * Initializer. Is called at the beginning of search
-	 */
-	public function init() : void {
-		
-	}
-	
-	/**
-	 * Determine whether we found a Point
-	 *
-	 * @param array $color Color of the checked point. Array with keys 'red', 'green', 'blue', 'alpha'
-	 * @return bool  Mathes the point we search for or not
-	 */
-	abstract public function matches(array $color) : bool;
+    /**
+     * @var \GdImage Gd image object
+     */
+    protected \GdImage $img;
+
+    /**
+     * Setter
+     */
+    public function setImage(\GdImage $img) : void {
+        $this->img = $img;
+    }
+
+    /**
+     * Initializer. Is called at the beginning of search
+     */
+    public function init() : void {
+
+    }
+
+    /**
+     * Determine whether we found a Point
+     *
+     * @param array $color Color of the checked point. Array with keys 'red', 'green', 'blue', 'alpha'
+     * @return bool  Mathes the point we search for or not
+     */
+    abstract public function matches(array $color) : bool;
 }
