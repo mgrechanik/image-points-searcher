@@ -68,25 +68,25 @@ class Searcher
      * @param BaseStrategy $strategy Strategy to look for points
      * @param int $margin
      */	
-	public function __construct(string $filePath, BaseStrategy $strategy = null, int $margin = 15)  {
-            if (!file_exists($filePath)) {
-                throw new \Exception('File not found');
-            }
-            if ($img = @imagecreatefromjpeg($filePath)) {
-                $this->img = $img;
-            } else {
-                throw new \Exception('Image format is incorrect, we expect jpg image');
-            }	
-            $this->margin = $margin;
-            $this->width = imagesx($this->img);
-            $this->height = imagesy($this->img);
-            $this->pixels = array_fill(0, $this->height, array_fill(0, $this->width, ''));
-            $this->strategy = $strategy;
-            if (!$this->strategy) {
-                $this->strategy = new DifferentColorsStrategy();
-            }
-            $this->strategy->setImage($this->img);
-	}
+    public function __construct(string $filePath, BaseStrategy $strategy = null, int $margin = 15)  {
+        if (!file_exists($filePath)) {
+            throw new \Exception('File not found');
+        }
+        if ($img = @imagecreatefromjpeg($filePath)) {
+            $this->img = $img;
+        } else {
+            throw new \Exception('Image format is incorrect, we expect jpg image');
+        }	
+        $this->margin = $margin;
+        $this->width = imagesx($this->img);
+        $this->height = imagesy($this->img);
+        $this->pixels = array_fill(0, $this->height, array_fill(0, $this->width, ''));
+        $this->strategy = $strategy;
+        if (!$this->strategy) {
+            $this->strategy = new DifferentColorsStrategy();
+        }
+        $this->strategy->setImage($this->img);
+    }
 	
     /**
      * Returns all points we found
@@ -185,7 +185,6 @@ class Searcher
             }
         }
         return count($this->points);
-
     }	
 	
 
