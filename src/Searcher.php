@@ -22,7 +22,7 @@ class Searcher
     /**
      * @var \GdImage Gd image object
      */	
-	private \GdImage $img;
+    private \GdImage $img;
 	
     /**
      * @var array Points we found on image
@@ -57,7 +57,8 @@ class Searcher
 	
     /**
      * @var int The margin
-     * When we found the pixel we are looking for we mark all margin around like the one we shou;d ignore in our next search
+     * When we found the pixel we are looking for we mark all margin around like the one 
+     * we should ignore in our next search
      */	
     private int $margin;
 	

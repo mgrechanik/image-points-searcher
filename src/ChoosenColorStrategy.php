@@ -43,9 +43,9 @@ class ChoosenColorStrategy extends BaseStrategy /*implements SearchStrategyInter
 
     /**
      * Check whether point color is like the one we are looking for
-         *
-         * @param array $color 
-         * @return bool 
+     *
+     * @param array $color 
+     * @return bool 
      */ 	
     protected function isLikeSearchColor(array $color) : bool{
         return 
