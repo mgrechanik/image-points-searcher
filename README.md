@@ -2,7 +2,7 @@
 
 [Русская версия](docs/README_ru.md)
 
-## Содержание
+## Table of contents
 
 * [Goal](#goal)
 * [Demo](#demo)
