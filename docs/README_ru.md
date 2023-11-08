@@ -43,11 +43,11 @@
 ## Демо <span id="demo"></span>
 
 Определение точек по стратегии ```DifferentColorsStrategy``` , **Рисунок 1**:
-![Определение точек на изображении](https://raw.githubusercontent.com/mgrechanik/yii2-categories-and-tags/master/docs/images/categories.png "Определение точек на изображении")
+![Определение точек на изображении](https://raw.githubusercontent.com/mgrechanik/image-points-searcher/main/docs/first.jpg "Определение точек на изображении")
 
 
 Определение точек по стратегии ```ChoosenColorStrategy``` , **Рисунок 2**:
-![Определение точек на изображении](https://raw.githubusercontent.com/mgrechanik/yii2-categories-and-tags/master/docs/images/categories.png "Определение точек на изображении карты США")
+![Определение точек на изображении](https://raw.githubusercontent.com/mgrechanik/image-points-searcher/main/docs/second.jpg "Определение точек на изображении карты США")
 
 	
 ---

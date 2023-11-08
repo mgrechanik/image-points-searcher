@@ -43,11 +43,11 @@ We also give you ```ImageResult```, who creates the image of the search result:
 ## Demo <span id="demo"></span>
 
 Determine points with ```DifferentColorsStrategy``` strategy , **Picture 1**:
-![Determine points on image](https://raw.githubusercontent.com/mgrechanik/yii2-categories-and-tags/master/docs/images/categories.png "Determine points on image")
+![Determine points on image](https://raw.githubusercontent.com/mgrechanik/image-points-searcher/main/docs/first.jpg "Determine points on image")
 
 
 Determine points with ```ChoosenColorStrategy``` strategy, **Picture 2**:
-![Determine points on image](https://raw.githubusercontent.com/mgrechanik/yii2-categories-and-tags/master/docs/images/categories.png "Determine points on USA map image")
+![Determine points on image](https://raw.githubusercontent.com/mgrechanik/image-points-searcher/main/docs/second.jpg "Determine points on USA map image")
 
 	
 ---
