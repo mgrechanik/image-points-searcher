@@ -60,12 +60,12 @@ The preferred way to install this library is through composer.
 
 Either run
 ```
-composer require --prefer-dist mgrechanik/yii2-categories-and-tags
+composer require --prefer-dist mgrechanik/image-points-searcher
 ```
 
 or add
 ```
-"mgrechanik/yii2-categories-and-tags" : "~1.0.0"
+"mgrechanik/image-points-searcher" : "~1.0.0"
 ```
 to the require section of your `composer.json`.
 

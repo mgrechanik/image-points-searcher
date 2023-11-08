@@ -58,12 +58,12 @@
 
 Выполните
 ```
-composer require --prefer-dist mgrechanik/yii2-categories-and-tags
+composer require --prefer-dist mgrechanik/image-points-searcher
 ```
 
 или добавьте
 ```
-"mgrechanik/yii2-categories-and-tags" : "~1.0.0"
+"mgrechanik/image-points-searcher" : "~1.0.0"
 ```
 в  `require` секцию вашего `composer.json` файла.
 
